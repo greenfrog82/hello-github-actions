@@ -1,0 +1,14 @@
+name: A workflow for PR merged
+on: 
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    name: Hello world action - PR Merged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "PR Merged"
