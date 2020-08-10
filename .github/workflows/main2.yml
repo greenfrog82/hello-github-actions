@@ -1,6 +1,7 @@
 name: A workflow for PR merged
-on: push
-  branches:
+on: 
+  push:
+    branches:
     - master
 jobs:
   build:
